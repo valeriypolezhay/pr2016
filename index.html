@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>My profile</title>
+	<meta name="author" content="Alvaro Trigo Lopez" /> <!--copypasted by Nativus-->
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="shortcut icon" href="http://www.pngall.com/wp-content/uploads/2016/03/Illuminati-PNG-Picture.png">
+
+	<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<style>
+
+		@font-face {
+
+			font-family: 'clip';
+			src: url(../fonts/Rubik.ttf);
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		/* Reset CSS
+		 * --------------------------------------- */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+		form,fieldset,input,textarea,p,blockquote,th,td {
+		    padding: 0;
+		    margin: 0;
+			font-family: 'Rubik', sans-serif;
+
+		}
+		h1,h2,h3,h4,h5,h6{
+			font-family: 'Rubik', sans-serif;
+		}
+		ul{
+			font-size:30px;
+		}
+		a{
+			text-decoration:none;
+		}
+		table {
+		    border-spacing: 0;
+		}
+		fieldset,img {
+		    border: 0;
+		}
+		address,caption,cite,code,dfn,em,strong,th,var {
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol,ul {
+		    list-style: none;
+		    margin:0;
+		    padding:0;
+
+
+		}
+		caption,th {
+		    text-align: left;
+
+		}
+		h1,h2,h3,h4,h5,h6 {
+		    font-weight: normal;
+		    font-size: 100%;
+		    margin:0;
+		    padding:0;
+		    color:#f2f2f2;
+		}
+		q:before,q:after {
+		    content:'';
+		}
+		abbr,acronym { border: 0;
+		}
+
+
+
+		/* Custom CSS
+		 * --------------------------------------- */
+		body{
+			font-family: arial,helvetica;
+			color: #f9f9f9;
+			font-size: 8px;
+		}
+		h1{
+			font-size: 35px;
+		}
+		p{
+			font-size: 20px;
+		}
+		.content{
+			position: relative;
+			top: 40%;
+			transform: translateY(-50%);
+			text-align: center;
+		}
+
+		/* Section 1
+		 * --------------------------------------- */
+		#section0{
+			background-color: #BFDA00;
+		}
+		#section0 h1{
+			color: #000;
+		}
+		#section0 p{
+			color: #000;
+			opacity: 1;
+		}
+
+
+		/* Section 2
+		 * --------------------------------------- */
+		#section1{
+			background-color: #2EBE21;
+		}
+		#section1 h1{
+			color: #ffffff;
+			font-size:35px;
+			font-weight: bold;
+		}
+		#section1 p{
+			opacity: 1;
+		}
+
+
+		/* Section 3
+		 * --------------------------------------- */
+		#section2{
+			background-color: #2C3E50;
+		}
+		#section2 h1{
+			color: #303032;
+			font-size:35px;
+			font-weight: bold;
+		}
+		#section2 p{
+			opacity: 1;
+		}
+		.soc{
+			weigh:100px;
+			height:100px;
+			z-index:1;
+		}
+		.round {
+			border-radius: 550px; /* Радиус скругления */
+			border: 3px solid #f2f2f2; /* Параметры рамки */
+			box-shadow: 0 0 7px #666; /* Параметры тени */
+			weigh:100px;
+			height:100px;
+		}
+		.hi{
+			font-size: 35px;
+			color: #000000;
+			font-weight: bold;
+					}
+		.f{
+			color:#000000;
+			position: static;
+			bottom:100px;
+		}
+	</style>
+</head>
+<body>
+
+
+<div id="fullpage">
+	<div style="background-image: url(https://pp.vk.me/c633419/v633419506/36f81/1AClgX-LNlU.jpg)" class="section" id="section0" >
+		<div class="content">
+				<h1 class="hi" >Привет!<br>Меня зовут Полежай Валерий</h1>
+			<br>
+			<img src="https://pp.vk.me/c633419/v633419506/36f89/2b1DsPvnrkc.jpg" class="round">
+			<br><br><br><br><br><br><br><br><br><br><br>
+
+			<p class="hi"> Я студент ХАИ,<br>а этот сайт-визитка ― моё задание по учебной практике.</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div style="background-image: url(https://b.3ddd.ru/media/tinymce_images/john_travolta/21c5e591b95a3babc2c2e9fa636603d9.jpg)" class="slide" id="slide1">
+			<div class="content">
+				<h1>Выполняя задание я получил начальные знания в:</h1>
+				<p><br>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+
+				</p>
+				<br>
+				<br>
+				<br>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<div style="background: url(https://pp.vk.me/c633419/v633419506/36f77/jaOgTnGXEUw.jpg)" class="slide" id="slide2">
+			<div class="content">
+				<h1>Начал осваивать среду разработки WebStorm</h1>
+			</div>
+		</div>
+		<div style="background: url(https://pp.vk.me/c633419/v633419506/36f6d/j8vmethziXs.jpg)" class="slide" id="slide2">
+			<div class="content">
+				<h1>И загрузил сайт на хостинг</h1>
+			</div>
+		</div>
+	</div>
+	<div style="background: url(https://pp.vk.me/c633419/v633419506/36f63/7X6TVQRxhxk.jpg)" class="section" id="section2">
+		<div class="content">
+			<h1>Я В СОЦСЕТЯХ</h1>
+			<p><br>
+			<a href="https://new.vk.com/tesla_geek">
+				<img class="soc" src="http://zismo.biz/uploads/monthly_03_2016/post-198720-0-01045700-1457486892.png"></a>
+			<a href="https://plus.google.com/u/0/103456572235329505688">
+				<img class="soc" src="https://lh3.googleusercontent.com/-IMGb4CkWC98/VeXR6rWlM1I/AAAAAAAA7c4/aC-I28R6_psCNtxmIXAtNuMja5wCYUR9A/w506-h750/GooglePlus-logos-02.png"></a>
+			<a href="https://www.instagram.com/nativusgram/">
+				<img class="soc"src="http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png"></a>
+			<div  class="f">
+				<br>
+				<br>
+				<br>
+
+			<footer>
+				<p class="f">
+					Kharkiv , 2016
+				</p>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		css3:true
+	});
+
+</script>
+
+</body>
+</html>
